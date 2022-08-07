@@ -14,6 +14,7 @@ export default function Index() {
   }, [modalOpen, socket]);
 
   const socketInitializer = (): void => {
+    // This is the bot URL
     const s = io("https://39ca-65-57-82-58.ngrok.io");
 
     setSocket(s);
